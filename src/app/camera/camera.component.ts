@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-camera',
@@ -11,7 +12,12 @@ import { Component } from '@angular/core';
 export class CameraComponent {
   public imageUrl: string | undefined;
 
-  constructor() {}
+  constructor(private router: Router) {}
+  
+    // Método para navegar a la página de Inicio (o Login si lo prefieres)
+    irHistory(): void {
+      this.router.navigate(['/history']);  // Redirige a la ruta de inicio
+    }
 
   captureImage(event: any) {
     const video = document.createElement('video');

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-history',
@@ -23,6 +24,11 @@ export class HistoryComponent {
     }
   ];
 
-  constructor() {}
 
+  constructor(private router: Router) {}
+  
+    // Método para navegar a la página de Inicio (o Login si lo prefieres)
+    irCamera(): void {
+      this.router.navigate(['/camera']);  // Redirige a la ruta de inicio
+    }
 }

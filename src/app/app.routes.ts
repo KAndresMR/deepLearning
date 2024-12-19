@@ -6,5 +6,5 @@ export const routes: Routes = [
 
     { path: 'camera', component: CameraComponent },
     { path: 'history', component: HistoryComponent },
-
+    { path: '', redirectTo: '/camera', pathMatch: 'full' }
 ];

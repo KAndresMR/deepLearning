@@ -1,9 +1,19 @@
-<div>
-    <button (click)="captureImage($event)">Explorar</button>
-    <div *ngIf="imageUrl">
-      <h3>Imagen Capturada</h3>
-      <h3>Imagen Captura</h3>
-      <img [src]="imageUrl" alt="Captured Image" />
-    </div>
-  </div>
+<div class="navbar">
+  <ul>
+    <li><button>Inicio</button></li>
+    <li><button (click)="irHistory()">Historial</button></li>
+  </ul>
+</div>
+
+<div class="container">
+  <h1>Machine Learning: Captura y Procesa Imágenes</h1>
+  <p>Utiliza este sistema para capturar una imagen y procesarla mediante algoritmos de Machine Learning. Haz clic en el botón para empezar.</p>
   
+  <button (click)="captureImage($event)">Tomar Foto</button>
+  
+  <div *ngIf="imageUrl" class="image-container">
+    <h3>Resultado de la Imagen Capturada</h3>
+    <img [src]="imageUrl" alt="Captured Image" />
+    <p>Esta imagen será procesada para análisis avanzado. Si deseas capturar otra imagen, simplemente presiona el botón nuevamente.</p>
+  </div>
+</div>
