@@ -1,0 +1,39 @@
+.history-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .history-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .history-item img {
+    max-width: 150px;
+    max-height: 150px;
+    margin-right: 20px;
+    border-radius: 8px;
+  }
+  
+  .details {
+    text-align: left;
+  }
+  
+  .details p {
+    margin: 5px 0;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
