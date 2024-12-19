@@ -1,3 +1,28 @@
+/* Estilo para el botón de subir imagen */
+.upload-btn {
+  background-color: #4CAF50; /* Color de fondo verde */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;  /* Alinea el botón en línea */
+  margin-left: 10px;  /* Añade un margen izquierdo */
+}
+
+.upload-btn:hover {
+  background-color: #45a049; /* Cambia el color de fondo al pasar el ratón */
+  transform: scale(1.05); /* Efecto de ampliación al pasar el ratón */
+}
+
+/* Asegúrate de que el input tipo file esté oculto */
+input[type="file"] {
+  display: none; /* Oculta el campo de selección de archivos */
+}
+
+/* Estilo general para la barra de navegación y otros botones */
 .navbar {
   background-color: #333;
   overflow: hidden;
@@ -30,6 +55,7 @@
   background-color: #4CAF50;
 }
 
+/* Estilos de la caja contenedora */
 .container {
   text-align: center; /* Centra todo el contenido */
   margin-top: 20px;

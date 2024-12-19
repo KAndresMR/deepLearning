@@ -37,4 +37,17 @@ export class CameraComponent {
         });
       });
   }
+
+   // Método para manejar la selección de una imagen desde el archivo
+   onImageSelected(event: any): void {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        this.imageUrl = reader.result as string;  // Establece la URL de la imagen seleccionada
+      };
+      reader.readAsDataURL(file);  // Lee el archivo como una URL de datos
+    }
+  }
 }
+
